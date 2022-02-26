@@ -3,3 +3,23 @@
     background-color: #252827;
     overflow: hidden;
 }
+
+/* Menu Icon */
+.menu-icon-container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar-1, .bar-2, .bar-3 {
+    width: 35px;
+    height: 5px;
+    background-color: #252827;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar in menu icon */
+.change .bar-1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
