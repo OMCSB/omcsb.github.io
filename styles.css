@@ -23,3 +23,14 @@
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
 }
+
+/* Fade out second bar in menu icon */
+.change .bar-2 {
+    opacity: 0;
+}
+
+/* Rotate last bar in menu icon */
+.change .bar-3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
