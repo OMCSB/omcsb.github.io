@@ -4,7 +4,7 @@
             "name": "Launch Microsoft Edge and open the Edge DevTools",
             "request": "launch",
             "type": "vscode-edge-devtools.debug",
-            "url": "/home/omcsb/repos2/Main_Portfolio_Page/omcsb.github.io/index.html" // Provide your project's url to finish configuring
+            "url": "file:///home/omcsb/repos2/Main_Portfolio_Page/omcsb.github.io/index.html" // Provide your project's url to finish configuring
         }
     ]
 }
