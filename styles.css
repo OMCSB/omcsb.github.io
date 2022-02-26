@@ -13,7 +13,7 @@
 .bar-1, .bar-2, .bar-3 {
     width: 35px;
     height: 5px;
-    background-color: #252827;
+    background-color: azure;
     margin: 6px 0;
     transition: 0.4s;
 }
