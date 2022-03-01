@@ -1,13 +1,58 @@
-/* Side nav */
+/* Background of the whole site */
+body {
+    background-color: #252827;
+    transition: background-color .5s;
+}
+/* Side nav menu display*/
 .side-nav {
     background-color: #252827;
     overflow: hidden;
+    height: 0px;
+    width: 35px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+/* Side nav menu options display */
+.dropdown-content a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.dropdown-content .closebbttn {
+    padding: 0;
+    text-decoration: none;
+
+}
+
+/* Style side nav */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* Responsive side nav */
+@media screen and (max-height: 450px) {
+    .dropdown-content {padding-top: 15px;}
+    .dropdown-content a {font-size: 18px;}
 }
 
 /* Menu Icon */
 .menu-icon-container {
     display: inline-block;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .bar-1, .bar-2, .bar-3 {

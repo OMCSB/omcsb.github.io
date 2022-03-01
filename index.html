@@ -7,40 +7,50 @@
     </head>
 
     <body>
-        <div class="profile-container">
-            <h1>Gareth Glendiuz Yauwira</h1>
+        <div id="main" class="profile-container">
+            <h1>Gareth Glendiuz Yauwira </h1>
 
             <img src="./Pics/ProfPic.jpeg">
 
             <p>A to-be Cyber Security Specialist as well as a freelance Web Designer</p>
         </div>
         
-        <div class="side-nav">
+        <div id="mySide-nav"  class="side-nav">
             <div class="menu-icon-container" onclick="myFunction(this)">
                 <script>
                 function myFunction(x){
                     x.classList.toggle("change");
+                    if (document.getElementById("mySide-nav").style.height == "100%")    {   document.getElementById("mySide-nav").style.width = "35px";
+                        document.getElementById("mySide-nav").style.height = "0";
+                        document.getElementById("main").style.marginLeft = "0";
+                        document.body.style.backgroundColor = "#252827";
+                    } else {
+                        document.getElementById("mySide-nav").style.width = "250px";
+                        document.getElementById("mySide-nav").style.height = "100%";
+                        document.getElementById("main").style.marginLeft = "250px";
+                        document.body.style.backgroundColor = "black";
+                    }
                 }
                 </script>
                 <div class="bar-1"></div>
                 <div class="bar-2"></div>
                 <div class="bar-3"></div>
+            </div>
 
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="">About</a>
-                    <button class="accordion">Projects</button>
-                    <div class="accordion-content">
-                        <a href="./Other_contents/side-projects.html">Side Projects</a>
-                        <a href="./Other_contents/course-projects.html">Course Projects</a>
-                    </div>
-                    <a href="">Education</a>
-                    <a href="">Certifcation</a>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="">About</a>
+                <button class="accordion">Projects</button>
+                <div class="accordion-content">
+                    <a href="./Other_contents/side-projects.html">Side Projects</a>
+                    <a href="./Other_contents/course-projects.html">Course Projects</a>
                 </div>
+                <a href="">Education</a>
+                <a href="">Certifcation</a>
             </div>
 
         </div>
 
-        <div>Education</div>
-        <div>Certificates</div>
+        <div id="main">Education</div>
+        <div id="main">Certificates</div>
     </body>
 </html>
