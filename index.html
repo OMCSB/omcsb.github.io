@@ -10,10 +10,18 @@
         <div id="main" class="profile-container">
             <h1>Gareth Glendiuz Yauwira </h1>
 
-            <img src="./Pics/ProfPic.jpeg">
+            <a href="linkedin.com/in/gareth-glendiuz-yauwira011003">
+                <img src="./Pics/ProfPic.jpeg">
+            </a>
 
             <p>A to-be Cyber Security Specialist as well as a freelance Web Designer</p>
+
+            <div>Education</div> 
+            
+            <div>Certificates</div>
         </div>
+
+        
         
         <div id="mySide-nav"  class="side-nav">
             <div class="menu-icon-container" onclick="myFunction(this)">
@@ -24,11 +32,13 @@
                         document.getElementById("mySide-nav").style.height = "0";
                         document.getElementById("main").style.marginLeft = "0";
                         document.body.style.backgroundColor = "#252827";
+                        document.getElementById("main").style.opacity = "100%";
                     } else {
                         document.getElementById("mySide-nav").style.width = "250px";
                         document.getElementById("mySide-nav").style.height = "100%";
                         document.getElementById("main").style.marginLeft = "250px";
                         document.body.style.backgroundColor = "black";
+                        document.getElementById("main").style.opacity = "30%";
                     }
                 }
                 </script>
@@ -66,7 +76,6 @@
 
         </div>
 
-        <div id="main">Education</div>
-        <div id="main">Certificates</div>
+        
     </body>
 </html>
