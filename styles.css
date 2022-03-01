@@ -5,6 +5,12 @@ body {
     color: azure;
 }
 
+/* Animating profile picture */
+.profile-container {
+    width: 75%;
+    margin: auto;
+}
+
 .profile-container img {
         position: relative;
         border-radius: 50%;
@@ -62,6 +68,30 @@ body {
     50% {opacity: 1.0;}
     100% {transform: scale(1, 1); opacity: 0.0;}
   }
+
+/* Profile bio */
+.profile-bio-container {
+    position: absolute;
+    right: 20%;
+    top: 17.5%;
+    width: 50%;
+}
+
+.spoiler-content {
+    display: inline;
+    background-repeat: no-repeat;
+    transition: all .5s ease-in-out;
+    color: grey;
+    background-position: right;
+    background-image: linear-gradient(grey, grey);
+    background-size: 100% 100% 
+    
+}
+
+.spoiler-content:hover {
+    color: azure;
+    background-size: 0% 100%;
+}
 /* Side nav menu display*/
 .side-nav {
     background-color: #252827;

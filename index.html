@@ -8,17 +8,24 @@
 
     <body>
         <div id="main" class="profile-container">
-            <h1>Gareth Glendiuz Yauwira </h1>
-
+            
             <a href="linkedin.com/in/gareth-glendiuz-yauwira011003">
                 <img src="./Pics/ProfPic.jpeg">
             </a>
-
-            <p>A to-be Cyber Security Specialist as well as a freelance Web Designer</p>
-
-            <div>Education</div> 
             
-            <div>Certificates</div>
+            <div class="profile-bio-container">
+                <h1 id="name">Gareth Glendiuz Yauwira </h1>
+
+                <p>A to-be Cyber Security Specialist as well as a freelance Web Designer</p>
+
+                <p class="spoiler-content">Student at Asia Pacific University of Technology and Innovation (APU / APIIT) who's passionate about tech, and a naturally curious person that'll pick up and learn anything. Currently studying Web design/development, Python programming, Photography, Video Editing, and foreign languages.</p>
+
+            </div>
+
+                <div id="Education">Education</div> 
+
+                <div id="Certificates">Certificates</div>
+            </div>
         </div>
 
         
@@ -30,13 +37,13 @@
                     x.classList.toggle("change");
                     if (document.getElementById("mySide-nav").style.height == "100%")    {   document.getElementById("mySide-nav").style.width = "35px";
                         document.getElementById("mySide-nav").style.height = "0";
-                        document.getElementById("main").style.marginLeft = "0";
+                        document.getElementById("main").style.marginLeft = "auto";
                         document.body.style.backgroundColor = "#252827";
                         document.getElementById("main").style.opacity = "100%";
                     } else {
                         document.getElementById("mySide-nav").style.width = "250px";
                         document.getElementById("mySide-nav").style.height = "100%";
-                        document.getElementById("main").style.marginLeft = "250px";
+                        document.getElementById("main").style.marginLeft = "auto";
                         document.body.style.backgroundColor = "black";
                         document.getElementById("main").style.opacity = "30%";
                     }
