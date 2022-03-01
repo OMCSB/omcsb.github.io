@@ -80,12 +80,11 @@ body {
 .spoiler-content {
     display: inline;
     background-repeat: no-repeat;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
     color: grey;
     background-position: right;
     background-image: linear-gradient(grey, grey);
-    background-size: 100% 100% 
-    
+    background-size: 100% 100%;
 }
 
 .spoiler-content:hover {
