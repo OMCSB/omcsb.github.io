@@ -1,0 +1,87 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background of the whole site */
+body {
+    background-color: #252827;
+    transition: background-color .5s;
+    color: azure;
+    min-height: 100vh;
+    margin: 0; 
+}
+
+/* Nav Bar */
+/* Navbar brand */
+.navbar .navbar-brand {
+    color: azure;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    color: azure    ;
+    margin: 0 1rem;
+}
+
+/* Active link style */
+.navbar-nav .nav-link.active {
+    color: azure;
+    font-weight: 500;
+    border-bottom: 3px solid white;
+}
+
+/* Hover link style */
+.navbar-nav a:hover {
+    border-bottom: 3px solid white; 
+}
+
+/* Profile Image Background */
+.profileContainer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/FYP1.png");
+    min-height: 100vh; 
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Description Container */
+.descriptionContainer {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.descriptionContainer img {
+    border-radius: 50%;
+    height: 8em;
+}
+
+/* Typewriter Effect */
+.typeWriter {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.typeWriter h1 {
+    overflow: hidden;
+    border-right: 5px solid white; /* Cursor effect */
+    white-space: nowrap;
+    margin: 0;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
