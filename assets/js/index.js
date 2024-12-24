@@ -49,7 +49,8 @@ $(document).ready(function() {
     const phrases = [
         "I am Gareth Glendiuz Yauwira",
         "I am a Full Stack Web Developer",
-        "I am a Shopify App Developer"
+        "I am a Shopify App Developer",
+        "I am a Cybersecurity Practionioner"
     ];
 
     const options = {
@@ -59,4 +60,18 @@ $(document).ready(function() {
     };
 
     typeWriter($('.changeHeader'), phrases, options);
+});
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    // Remove active class from all links
+    $('a[href^="#"]').removeClass('active');
+    
+    // Add active class to clicked link
+    $(this).addClass('active');
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
 });

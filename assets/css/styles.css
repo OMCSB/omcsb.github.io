@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* HTML */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Background of the whole site */
 body {
     background-color: #252827;
@@ -70,7 +75,7 @@ body {
     min-height: 60px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .typeWriter h1 {
