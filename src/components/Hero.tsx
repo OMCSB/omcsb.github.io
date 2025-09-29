@@ -1,6 +1,7 @@
 import { LayoutGroup, motion } from "framer-motion";
 import { Download, Eye } from "lucide-react";
 import RotatingText from "./RotatingText";
+import Particles from "./Particles";
 
 export const Hero = () => {
   const scrollToProjects = () => {
@@ -13,49 +14,28 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden "
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-hero opacity-5" />
 
-      {/* Blur Gradient Background */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Large primary blur orbs */}
-        <div className="absolute -top-40 -left-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-        <div
-          className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-accent/25 rounded-full blur-3xl animate-pulse"
-          style={{ animationDelay: "1s" }}
+      <div className="absolute inset-0">
+        <Particles
+          particleColors={["#ffffff", "#ffffff"]}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={false}
+          alphaParticles={false}
+          disableRotation={false}
         />
-
-        {/* Medium secondary blur orbs */}
-        <div
-          className="absolute top-1/4 right-1/4 w-80 h-80 bg-primary-glow/15 rounded-full blur-3xl animate-pulse"
-          style={{ animationDelay: "0.5s" }}
-        />
-        <div
-          className="absolute bottom-1/3 left-1/5 w-72 h-72 bg-accent-glow/20 rounded-full blur-3xl animate-pulse"
-          style={{ animationDelay: "2s" }}
-        />
-
-        {/* Small accent blur orbs */}
-        <div
-          className="absolute top-1/2 left-1/2 w-48 h-48 bg-primary/10 rounded-full blur-2xl animate-pulse"
-          style={{ animationDelay: "1.5s" }}
-        />
-        <div
-          className="absolute top-3/4 right-1/3 w-56 h-56 bg-accent/15 rounded-full blur-2xl animate-pulse"
-          style={{ animationDelay: "0.8s" }}
-        />
-
-        {/* Gradient overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 backdrop-blur-[1px]" />
+         
       </div>
 
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, staggerChildren: 0.2, delayChildren: 0.3 }}
-        className="container mx-auto px-6 text-start relative z-10 max-w-7xl"
+        className="container mx-auto px-6 text-start relative z-20 max-w-7xl"
       >
         <motion.div
           initial={{ y: 30, opacity: 0 }}
@@ -83,7 +63,7 @@ export const Hero = () => {
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
           className="max-w-2xl text-base sm:text-lg leading-relaxed text-left mx-auto sm:mx-0"
         >
           <p className="mb-3">
@@ -95,7 +75,7 @@ export const Hero = () => {
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center sm:justify-start items-center w-full mt-6"
         >
           <motion.button
