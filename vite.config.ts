@@ -22,9 +22,11 @@ export default defineConfig({
           // Split vendor libraries
           vendor: ['react', 'react-dom'],
           // Split animation library
-          animations: ['framer-motion'],
+          animations: ['framer-motion', 'gsap', '@gsap/react', 'motion'],
           // Split UI libraries
-          ui: ['lucide-react', '@radix-ui/react-tooltip', 'next-themes'],
+          ui: ['lucide-react', '@radix-ui/react-tooltip', 'next-themes', 'react-icons', 'daisyui', 'sonner'],
+          // Split WebGL libraries
+          webgl: ['ogl'],
           // Split utility libraries
           utils: ['clsx', 'class-variance-authority', 'tailwind-merge'],
           // Split routing
