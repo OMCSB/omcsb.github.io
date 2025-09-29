@@ -41,7 +41,7 @@ export const Hero = () => {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-row flex-wrap text-2xl sm:text-3xl md:text-5xl gap-2 mb-6 text-center sm:text-left"
+          className="flex flex-row flex-wrap text-3xl sm:text-4xl md:text-6xl gap-2 mb-6 text-center sm:text-left"
         >
           <LayoutGroup>
             <p className="py-0.5 sm:py-1 md:py-2">I'm</p>
@@ -64,7 +64,7 @@ export const Hero = () => {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="max-w-2xl text-base sm:text-lg leading-relaxed text-left mx-auto sm:mx-0"
+          className="max-w-2xl text-sm sm:text-lg leading-relaxed text-left mx-auto sm:mx-0"
         >
           <p className="mb-3">
             Full-stack developer with hands-on experience designing, building,
