@@ -1,23 +1,24 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Download } from "lucide-react";
+import { Mail, Download } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com/yourusername",
-      icon: Github,
+      url: "https://github.com/omcsb",
+      icon: FaGithub,
       label: "View my code on GitHub",
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/yourprofile",
-      icon: Linkedin,
+      url: "https://www.linkedin.com/in/gareth-glendiuz-yauwira/",
+      icon: FaLinkedin,
       label: "Connect with me on LinkedIn",
     },
     {
       name: "Email",
-      url: "mailto:your.email@example.com",
+      url: "mailto:gareth.yauwira@gmail.com",
       icon: Mail,
       label: "Send me an email",
     },

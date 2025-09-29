@@ -20,7 +20,7 @@ export const Header = () => {
         <div className="flex justify-between items-center">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-xl font-bold text-foreground max-w-[64px]"
+            className="text-xl font-bold text-foreground max-w-[32px] md:max-w-[64px]"
           >
             <span>
               <img src="/assets/NewLogo.png"/>
