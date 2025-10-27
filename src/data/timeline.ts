@@ -2,8 +2,21 @@ import type { TimelineItem } from "@/types/portfolio";
 
 export const timelineData: TimelineItem[] = [
   {
-    id: "2024",
-    year: "2024",
+    id: "2025",
+    year: "2025",
+    title: "Web Developer",
+    role: "Web Developer",
+    company: "Freelance",
+    location: "Remote",
+    excerpt:
+      "",
+    details: ``,
+    tech: ["React", "Firebase"],
+   //  link: "https://github.com/example/healthcare-billing",
+  },
+  {
+    id: "2025",
+    year: "2025",
     title: "Full-stack Developer",
     role: "Full-stack Developer",
     company: "CareDoct",
