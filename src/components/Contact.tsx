@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, CheckCircle, AlertCircle, Mail, MapPin, Phone } from "lucide-react";
+import emailjs from '@emailjs/browser';
+import {
+  Send,
+  CheckCircle,
+  AlertCircle,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
 import type { ContactForm } from "@/types/portfolio";
 
 export const Contact = () => {
@@ -49,10 +57,17 @@ export const Contact = () => {
 
     setIsSubmitting(true);
     setSubmitStatus("idle");
+    const templateParams = {
+      user_name: formData.name,
+      user_email: formData.email,
+      user_description: formData.message
+    };
 
     try {
       // Mock API call - replace with actual endpoint
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      emailjs.send("service_q6bboui", "template_2e7gbjg", templateParams, {
+        publicKey: "wqK-pfuw6jreDXY9R",
+      });
 
       // Simulate successful submission
       setSubmitStatus("success");
@@ -136,7 +151,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Location</p>
-                    <p className="text-muted-foreground">Indonesia   </p>
+                    <p className="text-muted-foreground">Indonesia </p>
                   </div>
                 </motion.div>
 
